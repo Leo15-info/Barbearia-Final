@@ -47,7 +47,19 @@
   .nav-links a:hover {
     color: #c49f4b;
   }
-  
+  #backToTop {
+    display: none; /* começa escondido */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+  }
   /* Banner */
   .banner {
     height: 400px;
@@ -334,6 +346,7 @@
     background-color: #e0b84b;
     transform: scale(1.05);
   }
+  
   footer {
     background-color: #000;
     color: #ccc;

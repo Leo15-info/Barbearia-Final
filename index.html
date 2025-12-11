@@ -112,9 +112,29 @@
       </form>
     </section>
   </main>
+  <button id="backToTop" title="Voltar ao topo">↑</button>
 
+  <script>
+    // Obtendo o botão de "Voltar ao Topo"
+    let backToTopButton = document.getElementById("backToTop");
+  
+    // Função para mostrar o botão quando o usuário rolar para baixo
+    window.onscroll = function() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        backToTopButton.style.display = "block"; // Exibe o botão
+      } else {
+        backToTopButton.style.display = "none"; // Esconde o botão
+      }
+    };
+  
+    // Função para rolar a página suavemente até o topo
+    backToTopButton.onclick = function() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+  </script>
   <footer>
     <p>&copy; 2025 Barbearia Estilo Fino. Todos os direitos reservados.</p>
   </footer>
+
 </body>
 </html>
